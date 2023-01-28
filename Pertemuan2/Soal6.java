@@ -12,7 +12,11 @@ public class Soal6 {
         b = sc.nextBigInteger();
         sc.close();
 
-        System.out.println(a.add(b));
-        System.out.println(a.multiply(b));
+        if ( a.compareTo(BigInteger.ZERO) < 0 || b.compareTo(BigInteger.ZERO) < 0 ) {
+            System.out.println("bil. tidak boleh negatif");
+        }else{
+            System.out.println(a.add(b));
+            System.out.println(a.multiply(b));
+        }
     }
 }

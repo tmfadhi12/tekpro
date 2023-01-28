@@ -1,3 +1,4 @@
+import java.text.DecimalFormat;
 import java.util.Scanner;
 
 public class Soal4 {
@@ -16,6 +17,7 @@ public class Soal4 {
                         : (itemterjual < 15) ? gajipokok - (((15 - itemterjual) * hargaperitem) * 0.15)
                                 : gajipokok + ((itemterjual * hargaperitem) * 0.10);
 
-        System.out.println(totalgaji);
+        DecimalFormat ft = new DecimalFormat("0");
+        System.out.println(ft.format(totalgaji));
     }
 }

@@ -17,7 +17,7 @@ public class Soal3 {
                 : (simbolOperasi.equals("-")) ? numA - numB
                         : (simbolOperasi.equals("*")) ? numA * numB
                                 : (simbolOperasi.equals("/")) ? (numA % numB == 0) ? numA / numB : 0
-                                        : (simbolOperasi.equals("+")) ? numA % numB : 0;
+                                        : (simbolOperasi.equals("%")) ? numA % numB : 0;
 
         System.out.println((numA >= 1 && numB >= 1 && numA <= 1000 && numB <= 1000) ? hasil : "Melebihi Range");
     }
