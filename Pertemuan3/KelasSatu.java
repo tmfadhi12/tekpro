@@ -10,7 +10,7 @@ public class KelasSatu {
         System.out.println(2);
     }
 
-    //constructor 3
+    //constructor with argument
     public KelasSatu(int i) {
         System.out.println(3);
     }
